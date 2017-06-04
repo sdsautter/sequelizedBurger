@@ -17,11 +17,6 @@ module.exports = function(app) {
         // findAll returns all entries for a table when used with no options
         db.Burger.findAll({}).then(function(dbBurger) {
             // We have access to the Burgers as an argument inside of the callback function
-            // console.log("find All:");
-            // console.log(dbBurger.length);
-            // for (var i = 0; i < dbBurger.length; i++) {
-            // console.log(dbBurger[i].dataValues);
-            // }
             var burgers = {
                 burgers: dbBurger
             };
@@ -45,20 +40,6 @@ module.exports = function(app) {
             res.redirect("/");
         });
     });
-
-    // DELETE route for deleting Burgers. We can get the id of the Burger to be deleted from
-    // req.params.id
-    // app.delete("/api/burgers/:id", function(req, res) {
-    //   // We just have to specify which Burger we want to destroy with "where"
-    //   db.Burger.destroy({
-    //     where: {
-    //       id: req.params.id
-    //     }
-    //   }).then(function(dbBurger) {
-    //     res.json(dbBurger);
-    //   });
-
-    // });
 
     // PUT route for updating Burgers. We can get the updated Burger data from req.body
     app.put("/:id", function(req, res) {
