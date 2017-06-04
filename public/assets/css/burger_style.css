@@ -1,0 +1,35 @@
+body {
+	background-image: url("../img/playstation-pattern.png");
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: #D66028;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+img {
+	max-height: 200px;
+	display: block;
+	margin: 0 auto;
+}
